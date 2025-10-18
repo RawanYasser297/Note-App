@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DQjEQYWa.png">
+
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-DgxjMZM-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DsBSezJF.css">
+</head>
+
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">TODO</h1>
+      <button class="theme-toggle" aria-label="Toggle Theme">
+        <img class="theme-toggle--image" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%3e%3cpath%20fill='%23FFF'%20fill-rule='evenodd'%20d='M13%2021a1%201%200%20011%201v3a1%201%200%2011-2%200v-3a1%201%200%20011-1zm-5.657-2.343a1%201%200%20010%201.414l-2.121%202.121a1%201%200%2001-1.414-1.414l2.12-2.121a1%201%200%20011.415%200zm12.728%200l2.121%202.121a1%201%200%2001-1.414%201.414l-2.121-2.12a1%201%200%20011.414-1.415zM13%208a5%205%200%20110%2010%205%205%200%20010-10zm12%204a1%201%200%20110%202h-3a1%201%200%20110-2h3zM4%2012a1%201%200%20110%202H1a1%201%200%20110-2h3zm18.192-8.192a1%201%200%20010%201.414l-2.12%202.121a1%201%200%2001-1.415-1.414l2.121-2.121a1%201%200%20011.414%200zm-16.97%200l2.121%202.12A1%201%200%20015.93%207.344L3.808%205.222a1%201%200%20011.414-1.414zM13%200a1%201%200%20011%201v3a1%201%200%2011-2%200V1a1%201%200%20011-1z'/%3e%3c/svg%3e" alt="">
+      </button>
+    </header>
+
+
+    <!-- Input -->
+    <section class="todo-input">
+      <form id="todo-form">
+        <input type="text" id="todo-text" class="form-input" placeholder="Currently typing..."
+          aria-label="Add a new todo">
+          <button class="todo-btn" type="button" >
+            <img src="data:image/png;base64,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" alt="">
+          </button>
+      </form>
+    </section>
+
+    <!-- Todo List -->
+    <section class="todo-container">
+      <div class="todos">
+        <ul class="todo-list">
+        
+        </ul>
+
+        <!-- Footer / Filters -->
+        <footer class="todo-footer">
+          <span class="items-left"> <span class="items-left--num"></span> items left</span>
+          <div class="filters">
+            <button class="filter all active">All</button>
+            <button class="filter unCompleted">Active</button>
+            <button class="filter completed">Completed</button>
+          </div>
+          <button class="clear-btn">Clear Completed</button>
+        </footer>
+
+
+    </section>
+    </div>
+
+
+
+    <p class="drag-drop-hint">Drag and drop to reorder list</p>
+  </main>
+</body>
+
+
+</html>
