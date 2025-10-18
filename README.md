@@ -7,7 +7,7 @@ It supports **light/dark theme**, **filters**, **drag & drop reordering**, and *
 
 ## 🌐 Live Demo
 
-🔗 **Live Site:** [View Todo App](https://rawanyasser297.github.io/todo-app/)  
+🔗 **Live Site:** [View Todo App](https://rawanyasser297.github.io/Note-App/)  
 💻 **GitHub Repository:** [Todo App Repo](https://github.com/RawanYasser297/Note-App.git)
 
 ---
